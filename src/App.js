@@ -91,6 +91,7 @@ function App() {
 
   return (
     <div className="app">
+      <h1>Welcome, what's on the list for today?</h1>
       <div className="todo-list">
         {todos.map((todo, index) => (
           <Todo
