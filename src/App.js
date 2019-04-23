@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Search from "./Search";
 import './App.css';
 
 
@@ -32,7 +33,8 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
 
 
 function TodoForm({ addTodo }) {
-  const [value, setValue] = useState("");
+  // hooks
+  const [value, setValue] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -91,8 +93,12 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Welcome, what's on the list for today?</h1>
+      <div id='search'>
+        <Search />
+      </div>
+      <h1>Welcome, what's on your list?</h1>
       <div className="todo-list">
+        <h2>Today</h2>
         {todos.map((todo, index) => (
           <Todo
             key={index}

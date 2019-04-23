@@ -10,15 +10,26 @@
 }
 
 .app h1 {
+  font-size: 40px;
   color: white;
   margin-bottom: 5rem;
+}
+
+#search {
+  margin-left: 60rem;
 }
 
 .todo-list {
   background: #e8e8e8;
   border-radius: 4px;
   padding: 10px;
-  width: 800px;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.todo-list h2 {
+  font-size: 30px;
+  color: #209cee;
 }
 
 .todo {
@@ -42,14 +53,24 @@
   transition: all .3s ease-in-out;
 }
 
+.todo button svg {
+  fill: #808080;
+}
+
 button:hover {
   transform: scale(1.4);
 }
 
+button svg:hover {
+  fill:black;
+}
+
 .input {
-  width: 80%;
+  width: 90%;
   outline: none;
   height: 30px;
   font-size: 20px;
   padding-left: 10px;
+  border-radius: 3px;
+  border: none;
 }
